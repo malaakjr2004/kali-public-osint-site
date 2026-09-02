@@ -1,7 +1,9 @@
-# GitHub Upload Checklist
+# Public Cybersecurity Release Checklist
 
-- [x] Inspect the project status and confirm the intended files are ready to commit.
-- [x] Check for secrets or private credentials before publishing the repository.
-- [x] Create the private GitHub repository `kali-public-osint-site`.
-- [x] Commit and push the current website source to the repository.
-- [x] Verify the remote URL, branch, and latest commit on GitHub.
+- [x] Audit tracked files, generated assets, configuration, and history for secrets or private material.
+- [x] Rewrite the repository README as a professional open-source security project overview.
+- [x] Add threat model, security policy, responsible disclosure, scope, and contribution guidance.
+- [x] Add GitHub issue templates and repository metadata files.
+- [x] Add CI checks for TypeScript, build, dependency review, and secret scanning.
+- [x] Commit and push the public-release improvements.
+- [x] Change the repository visibility to public and verify the final state.

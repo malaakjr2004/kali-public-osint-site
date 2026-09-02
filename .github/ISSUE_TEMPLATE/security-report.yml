@@ -1,0 +1,17 @@
+name: Security report
+description: Do not use public issues for suspected vulnerabilities.
+title: "[SECURITY] "
+labels:
+  - security
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not disclose sensitive details here. Please close this draft and use GitHub's private vulnerability reporting feature or the process in SECURITY.md.
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Private reporting acknowledgement
+      options:
+        - label: I have read SECURITY.md and will not include secrets, personal data, or exploit details in this public issue.
+          required: true

@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible documentation or website issue.
+title: "[BUG] "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the problem without including secrets, private targets, or personal data.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: Include safe steps and a placeholder target such as example.org.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: Kali version, browser, viewport, or commit SHA
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I removed credentials, tokens, cookies, personal information, and private infrastructure details.
+          required: true
