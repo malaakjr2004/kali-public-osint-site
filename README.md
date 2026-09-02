@@ -2,9 +2,6 @@
 
 > A calm, evidence-first field guide and documentation site for authorized public OSINT and non-destructive web assessment.
 
-[![CI](https://github.com/malaakjr2004/kali-public-osint-site/actions/workflows/ci.yml/badge.svg)](https://github.com/malaakjr2004/kali-public-osint-site/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/malaakjr2004/kali-public-osint-site/actions/workflows/codeql.yml/badge.svg)](https://github.com/malaakjr2004/kali-public-osint-site/actions/workflows/codeql.yml)
-
 ## What this repository is
 
 This repository contains the React website for the Kali Public OSINT field guide. The site turns the companion Kali Linux CLI workflow into a readable, navigable reference: installation, identifier analysis, passive-first web reconnaissance, optional Shodan and Have I Been Pwned enrichment, AI-assisted evidence summaries, report handling, and troubleshooting.
@@ -51,7 +48,7 @@ The site uses project-lifecycle asset URLs for its generated visual identity. Do
 | `client/src/components/ui/` | Shared accessible UI primitives from the project template |
 | `ideas.md` | Chosen visual direction and design decisions |
 | `INSTALL_GUIDE.md` | Full Kali Linux CLI installation and operations reference |
-| `.github/` | Issue templates, automated checks, and dependency update configuration |
+| `.github/` | Issue templates, contribution guidance, and dependency update configuration |
 | `SECURITY.md` | Vulnerability reporting and supported security posture |
 | `THREAT_MODEL.md` | Assets, trust boundaries, abuse cases, and mitigations |
 
@@ -105,7 +102,7 @@ Provider terms, rate limits, authorization requirements, and data handling oblig
 
 ## Quality and security checks
 
-The CI workflow runs TypeScript validation, the production build, and a production dependency audit. CodeQL analyzes JavaScript and TypeScript changes. Dependabot monitors npm dependencies. GitHub’s secret scanning and push protection should remain enabled on the public repository.
+Run TypeScript validation, the production build, and a production dependency audit before merging. Dependabot monitors npm dependencies. GitHub’s secret scanning, push protection, and CodeQL analysis should remain enabled on the public repository when available to the repository owner.
 
 Run the local checks before opening a pull request:
 
